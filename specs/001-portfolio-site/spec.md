@@ -8,6 +8,13 @@
 
 **Input**: User description: "Build a professional, modern, responsive personal portfolio website for showcasing my profile, skills, education, projects, experience, and achievements to recruiters and potential employers."
 
+## Clarifications
+
+### Session 2026-10-26
+
+- Q: Should the first release only prepare portfolio data for possible future AI features, or include AI features now? → A: First release has no AI features; structured content is prepared for future use.
+- Q: If one portfolio section contains malformed content, what should a visitor see? → A: Keep valid sections available, omit malformed content, and show a brief visitor-friendly notice.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Recruiter reviews the candidate quickly (Priority: P1)
@@ -54,10 +61,10 @@ The candidate wants future AI-powered features such as resume tailoring, role ma
 
 ### Edge Cases
 
-- What happens when a portfolio field is missing, empty, or malformed?
-- How does the site handle extra or unknown content entries that are not currently displayed?
-- What happens when a user loads the portfolio on a very small screen or with reduced browser support?
-- How should the site behave when content is partially unavailable or future AI-related metadata is absent?
+- Missing optional fields use sensible fallbacks; malformed entries are omitted while valid sections remain available, and visitors receive a brief, non-technical notice.
+- Additional unknown fields do not prevent the supported portfolio content from rendering.
+- At narrow screen widths, visitors can access content without horizontal scrolling.
+- Missing future AI-related metadata does not affect first-release portfolio rendering.
 
 ## Requirements *(mandatory)*
 
@@ -68,12 +75,12 @@ The candidate wants future AI-powered features such as resume tailoring, role ma
 - **FR-003**: The site MUST adapt to mobile, tablet, and desktop screens without requiring horizontal scrolling or unreadable layout changes.
 - **FR-004**: Portfolio content MUST be stored separately from presentation logic so content updates and additions do not require rewriting the UI.
 - **FR-005**: The content architecture MUST use a structured, machine-readable format that is easy to maintain, validate, and extend for future AI use cases.
-- **FR-006**: Missing, malformed, or unknown optional content MUST be handled gracefully using validation rules and sensible fallback behavior.
+- **FR-006**: Missing optional fields MUST use sensible fallbacks. Malformed content MUST be omitted without preventing valid sections from rendering, and visitors MUST receive a brief, non-technical notice.
 - **FR-007**: The website MUST deploy successfully as a static site on GitHub Pages without a custom backend, database, or paid hosting service.
-- **FR-008**: The site MUST preserve structured data that can later support AI-powered resume generation, job matching, and skill-gap analysis without requiring a complete rewrite.
+- **FR-008**: The site MUST preserve structured data that can later support AI-powered resume generation, job matching, and skill-gap analysis without requiring a complete rewrite; AI-powered features are outside the first-release scope.
 - **FR-009**: The implementation MUST prioritize clean, modular code and minimal dependencies, avoiding unnecessary frameworks and overengineering.
-- **FR-010**: The site MUST remain accessible through semantic layout, keyboard navigation support, and sufficient color contrast.
-- **FR-011**: The site MUST behave predictably when optional data is absent, malformed, or intentionally extended with additional fields.
+- **FR-010**: The site MUST remain accessible through semantic layout, keyboard-operable interactions, and color contrast meeting WCAG 2.1 AA minimums.
+- **FR-011**: The site MUST behave predictably when optional data is absent or intentionally extended with additional fields; unknown fields MUST NOT prevent supported content from rendering.
 - **FR-012**: The project MUST rely on manual inspection and code review for verification, and MUST NOT add or run automated tests.
 
 ### Key Entities *(include if feature involves data)*
@@ -103,5 +110,6 @@ The candidate wants future AI-powered features such as resume tailoring, role ma
 - The website will be a static portfolio intended for single-user presentation and employer discovery.
 - Candidate content may evolve over time, so the architecture should support easy additions without redesigning pages.
 - A structured data file is the preferred basis for future AI reuse and validation.
+- AI-powered resume generation, job matching, and skill-gap analysis are future capabilities and are not included in the first release.
 - GitHub Pages will serve the site as static assets without backend logic.
 - Modern browsers will be used for viewing; graceful fallback behavior is expected when optional metadata is absent.
