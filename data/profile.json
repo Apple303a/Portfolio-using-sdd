@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "profile": {
+    "name": "[PLACEHOLDER: Add your name]",
+    "headline": "[PLACEHOLDER: Add your professional headline]",
+    "summary": "[PLACEHOLDER: Write a concise summary of your experience and strengths]",
+    "location": "[PLACEHOLDER: Add your city or region]",
+    "contact": {
+      "links": []
+    }
+  }
+}

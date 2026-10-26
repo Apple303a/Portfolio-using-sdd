@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101719">
+    <meta name="description" content="A professional portfolio showcasing experience, skills, projects, education, and achievements.">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script type="module" src="./assets/js/main.js"></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Portfolio home">
+        <span class="wordmark-mark" aria-hidden="true">P</span>
+        <span>PORTFOLIO<span class="wordmark-period">.</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Portfolio sections">
+        <ul id="section-navigation"></ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="page-shell">
+      <div id="content-notice" class="content-notice" role="status" aria-live="polite" hidden>
+        Some portfolio information is unavailable. Please check back later.
+      </div>
+      <section id="portfolio-fallback" class="portfolio-fallback" aria-labelledby="fallback-title">
+        <p class="eyebrow">A professional portfolio</p>
+        <h1 id="fallback-title">Portfolio</h1>
+        <p>Explore selected experience, skills, projects, education, and achievements.</p>
+      </section>
+
+      <section id="profile-section" class="profile-section" aria-labelledby="profile-name" hidden></section>
+      <section id="skills-section" class="content-section" aria-labelledby="skills-heading" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="skills-heading">Skills</h2>
+        </div>
+        <div id="skills-content" class="section-content"></div>
+      </section>
+      <section id="experience-section" class="content-section" aria-labelledby="experience-heading" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Career</p>
+          <h2 id="experience-heading">Experience</h2>
+        </div>
+        <div id="experience-content" class="card-grid"></div>
+      </section>
+      <section id="projects-section" class="content-section" aria-labelledby="projects-heading" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-heading">Projects</h2>
+        </div>
+        <div id="projects-content" class="card-grid"></div>
+      </section>
+      <section id="education-section" class="content-section" aria-labelledby="education-heading" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Learning</p>
+          <h2 id="education-heading">Education</h2>
+        </div>
+        <div id="education-content" class="card-grid"></div>
+      </section>
+      <section id="achievements-section" class="content-section" aria-labelledby="achievements-heading" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Recognition</p>
+          <h2 id="achievements-heading">Achievements</h2>
+        </div>
+        <div id="achievements-content" class="card-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built with care <span aria-hidden="true">·</span> <a href="#top">Back to top</a></p>
+    </footer>
+    <noscript>
+      <p class="noscript-notice">Enable JavaScript to view the portfolio content.</p>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "items": [
+    {
+      "id": "replace-with-project-id",
+      "title": "[PLACEHOLDER: Add a project title]",
+      "description": "[PLACEHOLDER: Describe the project and the problem it solves]",
+      "role": "[PLACEHOLDER: Describe your role]",
+      "technologies": [
+        "[PLACEHOLDER: Add a technology]"
+      ],
+      "outcomes": [
+        "[PLACEHOLDER: Add a project outcome]"
+      ],
+      "links": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0",
+  "items": [
+    {
+      "id": "replace-with-skill-id",
+      "name": "[PLACEHOLDER: Add a skill]",
+      "category": "[PLACEHOLDER: Add a category]",
+      "level": "[PLACEHOLDER: Add an optional level]"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "items": [
+    {
+      "id": "replace-with-education-id",
+      "institution": "[PLACEHOLDER: Add an institution]",
+      "qualification": "[PLACEHOLDER: Add a qualification]",
+      "fieldOfStudy": "[PLACEHOLDER: Add a field of study]",
+      "description": "[PLACEHOLDER: Add relevant details]"
+    }
+  ]
+}

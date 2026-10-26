@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "items": [
+    {
+      "id": "replace-with-achievement-id",
+      "title": "[PLACEHOLDER: Add an achievement]",
+      "issuer": "[PLACEHOLDER: Add the issuing organization]",
+      "description": "[PLACEHOLDER: Add a brief description]",
+      "links": []
+    }
+  ]
+}
