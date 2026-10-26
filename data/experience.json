@@ -1,17 +1,4 @@
 {
   "schemaVersion": "1.0",
-  "items": [
-    {
-      "id": "replace-with-experience-id",
-      "role": "[PLACEHOLDER: Add a role]",
-      "organization": "[PLACEHOLDER: Add an organization]",
-      "description": "[PLACEHOLDER: Describe your responsibilities]",
-      "achievements": [
-        "[PLACEHOLDER: Add a measurable achievement]"
-      ],
-      "skills": [
-        "[PLACEHOLDER: Add a relevant skill]"
-      ]
-    }
-  ]
+  "items": []
 }

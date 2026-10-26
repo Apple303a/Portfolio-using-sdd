@@ -2,11 +2,17 @@
   "schemaVersion": "1.0",
   "items": [
     {
-      "id": "replace-with-achievement-id",
-      "title": "[PLACEHOLDER: Add an achievement]",
-      "issuer": "[PLACEHOLDER: Add the issuing organization]",
-      "description": "[PLACEHOLDER: Add a brief description]",
-      "links": []
+      "id": "leetcode-contest-rating-2026-10-26",
+      "title": "LeetCode contest rating: 1,783",
+      "issuer": "LeetCode",
+      "date": "2026-10-26",
+      "description": "Contest rating displayed on the public profile when checked on 2026-10-26.",
+      "links": [
+        {
+          "label": "LeetCode profile",
+          "url": "https://leetcode.com/u/Gunvir_Singh303/"
+        }
+      ]
     }
   ]
 }

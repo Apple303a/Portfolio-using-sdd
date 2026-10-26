@@ -2,17 +2,47 @@
   "schemaVersion": "1.0",
   "items": [
     {
-      "id": "replace-with-project-id",
-      "title": "[PLACEHOLDER: Add a project title]",
-      "description": "[PLACEHOLDER: Describe the project and the problem it solves]",
-      "role": "[PLACEHOLDER: Describe your role]",
+      "id": "sih26101-skill-platform",
+      "title": "AI-Enabled Skill Intelligence & Learning Platform",
+      "description": "A Smart India Hackathon 2026 submission for problem statement SIH26101, conceived as a skill-intelligence and learning platform. Skill-gap analysis, relevant learning-resource discovery, and persistent vector storage for learner and quiz data are planned rather than confirmed features of the deployed build. iGOT Karmayogi integration is an intended future path, not a completed integration.",
+      "role": "Team lead: coordinated work distribution and follow-up, provided technical guidance on technology-stack choices, and helped shape the project vision and future extensions. Separately built a RAG-based quiz-generator prototype using vector embeddings stored in ChromaDB; this prototype was not included in the hosted or submitted build.",
       "technologies": [
-        "[PLACEHOLDER: Add a technology]"
+        "Python",
+        "FastAPI",
+        "TypeScript",
+        "Gemini API"
       ],
       "outcomes": [
-        "[PLACEHOLDER: Add a project outcome]"
+        "Submitted to Smart India Hackathon 2026; frontend and backend prototypes are deployed.",
+        "Deployed features: course enrolment, current skill-score display, and course-specific quiz generation using the Gemini API."
       ],
-      "links": []
+      "links": [
+        {
+          "label": "Live frontend",
+          "url": "https://sih26101-mvp.vercel.app/"
+        },
+        {
+          "label": "Backend service",
+          "url": "https://sih26101-mvp-1.onrender.com"
+        },
+        {
+          "label": "GitHub repository",
+          "url": "https://github.com/D369Yeager/sih26101-skill-platform.git"
+        }
+      ]
+    },
+    {
+      "id": "flask-ecommerce-app",
+      "title": "Flask E-commerce Application",
+      "description": "An online shop in development, built with Flask to practise web application development and session-based state management. The current implementation includes a Bootstrap interface and a session-based cart.",
+      "technologies": [
+        "Flask",
+        "Bootstrap"
+      ],
+      "outcomes": [
+        "Status: in development.",
+        "Implemented so far: Bootstrap interface and session-based cart functionality."
+      ]
     }
   ]
 }

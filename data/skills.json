@@ -2,10 +2,54 @@
   "schemaVersion": "1.0",
   "items": [
     {
-      "id": "replace-with-skill-id",
-      "name": "[PLACEHOLDER: Add a skill]",
-      "category": "[PLACEHOLDER: Add a category]",
-      "level": "[PLACEHOLDER: Add an optional level]"
+      "id": "python",
+      "name": "Python",
+      "category": "Programming"
+    },
+    {
+      "id": "flask",
+      "name": "Flask",
+      "category": "Web Development"
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "category": "Web Development"
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "category": "Web Development"
+    },
+    {
+      "id": "data-structures-and-algorithms",
+      "name": "Data Structures and Algorithms (DSA)",
+      "category": "Computer Science"
+    },
+    {
+      "id": "database-management-systems",
+      "name": "Database Management Systems (DBMS)",
+      "category": "Computer Science"
+    },
+    {
+      "id": "operating-systems",
+      "name": "Operating Systems (OS)",
+      "category": "Computer Science"
+    },
+    {
+      "id": "computer-architecture-and-organization",
+      "name": "Computer Architecture and Organization (CAO)",
+      "category": "Computer Science"
+    },
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "category": "Mathematics"
+    },
+    {
+      "id": "probability-and-statistics",
+      "name": "Probability and Statistics",
+      "category": "Mathematics"
     }
   ]
 }

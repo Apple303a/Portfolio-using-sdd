@@ -2,11 +2,13 @@
   "schemaVersion": "1.0",
   "items": [
     {
-      "id": "replace-with-education-id",
-      "institution": "[PLACEHOLDER: Add an institution]",
-      "qualification": "[PLACEHOLDER: Add a qualification]",
-      "fieldOfStudy": "[PLACEHOLDER: Add a field of study]",
-      "description": "[PLACEHOLDER: Add relevant details]"
+      "id": "nsut-btech-csai",
+      "institution": "Netaji Subhas University of Technology (NSUT), Delhi",
+      "qualification": "B.Tech",
+      "fieldOfStudy": "Computer Science and Artificial Intelligence (CSAI)",
+      "startDate": "2025",
+      "endDate": "2029",
+      "description": "Expected graduation: 2029. Relevant coursework: Data Structures and Algorithms (DSA), Database Management Systems (DBMS), Operating Systems (OS), Computer Architecture and Organization (CAO), Mathematics, Probability and Statistics."
     }
   ]
 }

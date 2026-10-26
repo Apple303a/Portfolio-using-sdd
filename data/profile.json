@@ -1,12 +1,30 @@
 {
   "schemaVersion": "1.0",
   "profile": {
-    "name": "[PLACEHOLDER: Add your name]",
-    "headline": "[PLACEHOLDER: Add your professional headline]",
-    "summary": "[PLACEHOLDER: Write a concise summary of your experience and strengths]",
-    "location": "[PLACEHOLDER: Add your city or region]",
+    "name": "Gunvir Singh",
+    "headline": "B.Tech CSAI Undergraduate at NSUT | Seeking Software Engineering Internships",
+    "summary": "I am a B.Tech student in Computer Science and Artificial Intelligence at Netaji Subhas University of Technology (NSUT), interested in software engineering, problem-solving, and AI-enabled applications. I work with Python and Flask and am developing my foundations in data structures and algorithms, databases, operating systems, computer architecture, and mathematics. Through hands-on projects and competitive programming, I aim to build useful, reliable software and strengthen my engineering skills. I am currently seeking software engineering internships.",
+    "location": "Noida",
     "contact": {
-      "links": []
+      "email": "reachapple303a@gmail.com",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Apple303a"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/apple-apple-866348228/"
+        },
+        {
+          "label": "LeetCode",
+          "url": "https://leetcode.com/u/Gunvir_Singh303/"
+        },
+        {
+          "label": "Codeforces",
+          "url": "https://codeforces.com/profile/Apple303"
+        }
+      ]
     }
   }
 }
