@@ -25,13 +25,13 @@ foundation described below.
 **Purpose**: Establish the shared public data contract and resilient loading
 behavior required by all portfolio sections.
 
-- [ ] T004 Create the versioned profile JSON source and profile fields in `data/profile.json`; `profile.name` MUST be "Non-empty after trimming; otherwise use a generic profile heading."
-- [ ] T005 [P] Create the versioned skills, education, experience, projects, and achievements JSON sources in `data/skills.json`, `data/education.json`, `data/experience.json`, `data/projects.json`, and `data/achievements.json`; each file MUST contain `schemaVersion` `"1.0"` and an `items` array
+- [ ] T004 Create the versioned profile JSON source and profile fields in `data/profile.json`; `profile.name` MUST be "Non-empty after trimming; otherwise use a generic profile heading." If candidate details are unavailable, use visibly marked placeholders and require replacement before deployment.
+- [ ] T005 [P] Create the versioned skills, education, experience, projects, and achievements JSON sources in `data/skills.json`, `data/education.json`, `data/experience.json`, `data/projects.json`, and `data/achievements.json`; each file MUST contain `schemaVersion` `"1.0"` and an `items` array. Any placeholder entries MUST be visibly marked and replaced with candidate-approved content before deployment.
 - [ ] T006 Implement independent section fetching, response-status checks, JSON parsing, and section-level failure isolation in `assets/js/content.js`
-- [ ] T007 Implement shared field and record validators in `assets/js/content.js`; `skill.id`, `education.id`, `experience.id`, `project.id`, and `achievement.id` MUST respectively be "Non-empty and unique within skills", "Non-empty and unique within education", "Non-empty and unique within experience", "Non-empty and unique within projects", and "Non-empty and unique within achievements"; required record labels MUST be "Non-empty text; otherwise omit record.", dates MUST be "ISO date or year-month; omit if invalid.", and links MUST be "Must parse as an absolute `https:` or `mailto:` URL; otherwise omit link."; optional invalid fields and unknown fields MUST be ignored
+- [ ] T007 Implement shared field and record validators in `assets/js/content.js`; `skill.id`, `education.id`, `experience.id`, `project.id`, and `achievement.id` MUST respectively be "Non-empty and unique within skills", "Non-empty and unique within education", "Non-empty and unique within experience", "Non-empty and unique within projects", and "Non-empty and unique within achievements"; `profile.contact.email` MUST be omitted if it fails a basic email-shape check; `experience.endDate` MUST accept `null` for a current role; optional string arrays MUST retain only non-empty strings; invalid links MUST be omitted without discarding otherwise valid records; optional invalid fields and unknown fields MUST be ignored
 - [ ] T008 Implement safe DOM text rendering, valid `https:`/`mailto:` link checks, and one non-technical unavailable-content notice in `assets/js/render.js`
 - [ ] T009 Wire the entry module to load all section files concurrently and render usable sections plus a generic fallback when all useful content is unavailable in `assets/js/main.js`
-- [ ] T010 Validate project image paths as local relative assets and omit missing or invalid images without hiding the project record in `assets/js/content.js`
+- [ ] T010 Validate project image paths as local relative assets and omit missing or invalid images without hiding the otherwise valid project record in `assets/js/content.js`
 
 **Checkpoint**: Shared static shell can load independently versioned sections,
 report partial content, and retain valid sections when another section fails.
@@ -41,9 +41,11 @@ report partial content, and retain valid sections when another section fails.
 **Goal**: Present the candidate's background clearly to recruiters and employers
 on mobile, tablet, and desktop screens.
 
-**Independent Test**: Manually inspect the page at phone, tablet, and desktop
-widths. Confirm profile and primary portfolio sections are readable, navigable,
-keyboard-operable, and have no horizontal page overflow.
+**Independent Test**: In a manual review, confirm a recruiter can locate the
+candidate's professional summary, primary skills, and most recent experience
+within one minute using visible page content and navigation; also inspect phone,
+tablet, and desktop layouts for readability, keyboard operation, and horizontal
+overflow.
 
 ### Implementation
 
@@ -74,7 +76,7 @@ editing HTML, styles, or JavaScript.
 - [ ] T020 [US2] Document section file locations, payload shapes, `"1.0"` schema version, required/optional fields, and valid record examples in `data/README.md` consistent with `specs/001-portfolio-site/data-model.md`
 - [ ] T021 [US2] Implement iteration over every valid record in each section array without hard-coded entry counts in `assets/js/render.js`
 - [ ] T022 [US2] Insert content values as text nodes rather than interpreting them as markup in `assets/js/render.js`
-- [ ] T023 [US2] Manually update a profile value and add a project record in the corresponding JSON files, then verify both display without UI code changes in `data/profile.json` and `data/projects.json`
+- [ ] T023 [US2] In temporary copies of the profile and project JSON files, change a profile value and add a valid project record; verify both display without UI code changes, then discard the temporary copies and confirm no test content remains in release data under `data/`
 
 **Checkpoint**: The candidate can make common content updates in data files
 without rewriting the interface.
@@ -108,7 +110,7 @@ deployment readiness without automated tests.
 - [ ] T029 [P] Manually inspect missing optional fields, malformed JSON in one section file, malformed records, duplicate IDs, unknown fields, and unavailable section behavior using temporary local copies of files under `data/`
 - [ ] T030 Manually inspect local static hosting, mobile/tablet/desktop layouts, keyboard flow, and contrast according to `specs/001-portfolio-site/quickstart.md`
 - [ ] T031 Review all CSS, JavaScript, image, and JSON references to ensure they are document-relative and resolve under a GitHub Pages repository subpath in `index.html` and `assets/`
-- [ ] T032 Confirm the project uses static files only, without backend, database, build, test-suite, or runtime-service dependencies in `index.html`, `assets/`, and `data/`
+- [ ] T032 Confirm candidate-specific content has been supplied, visibly marked placeholders have been replaced, and the project uses static files only without backend, database, build, test-suite, or runtime-service dependencies in `index.html`, `assets/`, and `data/`
 
 ## Dependencies & Execution Order
 

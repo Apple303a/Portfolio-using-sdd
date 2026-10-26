@@ -97,7 +97,7 @@ The candidate wants future AI-powered features such as resume tailoring, role ma
 
 ### Measurable Outcomes
 
-- **SC-001**: Recruiters can identify the candidate's core strengths and professional background within the first minute of viewing the site.
+- **SC-001**: In a manual review, a recruiter can locate the candidate's professional summary, primary skills, and most recent experience within one minute using the page's visible content and navigation.
 - **SC-002**: The portfolio remains readable and functional on common mobile, tablet, and desktop screen sizes with no critical layout breakage.
 - **SC-003**: Content updates or additions can be made in the source data without changing the presentation logic or rewriting the UI.
 - **SC-004**: The site renders successfully even when optional fields are missing or malformed, with no crash and no blank-screen failure.
@@ -111,5 +111,6 @@ The candidate wants future AI-powered features such as resume tailoring, role ma
 - Candidate content may evolve over time, so the architecture should support easy additions without redesigning pages.
 - A structured data file is the preferred basis for future AI reuse and validation.
 - AI-powered resume generation, job matching, and skill-gap analysis are future capabilities and are not included in the first release.
+- Candidate-specific profile and portfolio content MUST be supplied before launch. Any temporary placeholder content MUST be visibly marked and replaced with candidate-approved content before deployment.
 - GitHub Pages will serve the site as static assets without backend logic.
 - Modern browsers will be used for viewing; graceful fallback behavior is expected when optional metadata is absent.
